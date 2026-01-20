@@ -115,6 +115,7 @@ let basket = ["apple", "banana", "orange", "pear"];
 // print first and last element
 console.log(`first fruit: ${basket[0]}`);
 console.log(`last fruit: ${basket.at(-1)}`);
+//console.log(`last fruit: ${basket[basket.length - 1]}`);
 
 // find 'banana' and replace it
 let banana_idx = basket.indexOf('banana');
@@ -139,12 +140,12 @@ dump_array(basket);
 // find 'orange'
 let orange_idx = basket.indexOf('orange');
 
-if (orange_idx >= 0) {
-	// we found 'orange'
-	console.log(`Orange found at index ${orange_idx}`);
-} else {
+if (orange_idx == -1) {
 	// we didn't find 'orange'
 	console.log('Orange not found');
+} else {
+	// we found 'orange'
+	console.log(`Orange found at index ${orange_idx}`);
 }
 
 // make another array from a slice of the basket array
