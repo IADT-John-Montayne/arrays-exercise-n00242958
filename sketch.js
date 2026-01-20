@@ -27,7 +27,7 @@ dump_array(basket);
 // find 'orange'
 let orange_idx = basket.indexOf('orange');
 
-if (orange_idx > 0) {
+if (orange_idx >= 0) {
 	// we found 'orange'
 	console.log(`Orange found at index ${orange_idx}`);
 } else {
