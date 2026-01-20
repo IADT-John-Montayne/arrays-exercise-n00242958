@@ -1,3 +1,115 @@
+// Examples
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits[0]); // apple
+console.log(fruits[2]); // orange
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+fruits[1] = "pear";
+
+console.log(fruits);
+// ["apple", "pear", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits.length); // 3
+}
+
+{
+let fruits = ["apple", "banana"];
+
+fruits.push("orange");
+
+console.log(fruits);
+// ["apple", "banana", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+fruits.pop();
+
+console.log(fruits);
+// ["apple", "banana"]
+}
+
+{
+let fruits = ["banana", "orange"];
+
+fruits.unshift("apple");
+
+console.log(fruits);
+// ["apple", "banana", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+fruits.shift();
+
+console.log(fruits);
+// ["banana", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+for (let i = 0; i < fruits.length; i++) {
+	console.log(fruits[i]);
+}
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+for (let fruit of fruits) {
+	console.log(fruit);
+}
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+console.log(fruits.indexOf("banana")); // 1
+console.log(fruits.indexOf("pear")); // -1
+}
+
+{
+let fruits = ["apple", "banana", "orange", "pear"];
+
+let citrus = fruits.slice(1, 3);
+
+console.log(citrus);
+// ["banana", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+fruits.splice(1,1);
+
+console.log(fruits);
+// ["apple", "orange"]
+}
+
+{
+let fruits = ["apple", "banana", "orange"];
+
+fruits.splice(1, 1, "pear");
+
+console.log(fruits);
+// ["apple", "pear", "orange"]
+}
+
+// Exercise
+
 let basket = ["apple", "banana", "orange", "pear"];
 
 // print first and last element
