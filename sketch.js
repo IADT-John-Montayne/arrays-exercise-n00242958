@@ -148,7 +148,7 @@ if (orange_idx >= 0) {
 }
 
 // make another array from a slice of the basket array
-let citrus = basket.slice(1, 3);
+let citrus = basket.slice((basket.length / 2) - 1, (basket.length / 2) + 1);
 
 // dump the citrus array
 dump_array(citrus);
